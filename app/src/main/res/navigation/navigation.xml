@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.adwardtheatre.yan.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_locationPositioningFragment"
+            app:destination="@id/locationPositioningFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popEnterAnim="@anim/fade_in"
+            />
+        <action
+            android:id="@+id/action_mainFragment_to_spaceStationFragment"
+            app:destination="@id/spaceStationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/locationPositioningFragment"
+        android:name="com.adwardtheatre.yan.LocationPositioningFragment"
+        android:label="fragment_location_positioning"
+        tools:layout="@layout/fragment_location_positioning" />
+    <fragment
+        android:id="@+id/spaceStationFragment"
+        android:name="com.adwardtheatre.yan.SpaceStationFragment"
+        android:label="fragment_space_station"
+        tools:layout="@layout/fragment_space_station" />
+</navigation>
