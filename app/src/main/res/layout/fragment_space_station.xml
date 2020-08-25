@@ -5,10 +5,45 @@
     android:layout_height="match_parent"
     tools:context=".SpaceStationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:text="astronauts"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Space Station Fragment" />
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/astroTv"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="250dp"
+        android:layout_gravity="center|bottom" />
+
+    <TextView
+        android:id="@+id/astrosCurrentNumberTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:text="x_humans_in_space"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="250dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/astrosRv"
+        android:layout_width="396dp"
+        android:layout_height="381dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp" />
+
 
 </FrameLayout>
